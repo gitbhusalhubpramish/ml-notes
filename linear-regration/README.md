@@ -20,6 +20,8 @@ where
 
 Here, the line cutting through the data plot is called *Regression Line*. This line is **the modal** that has learn to pridict.
 
+---
+
 ## In Python (Scikit-Learn)
 
 ```py
