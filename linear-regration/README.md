@@ -13,3 +13,5 @@ where
 - **y** = prediction
 - **m** = slope
 - **b** = intercept
+
+**Example**
