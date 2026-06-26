@@ -15,3 +15,5 @@ where
 - **b** = intercept
 
 **Example**
+
+![](linear-regration.jpg)
