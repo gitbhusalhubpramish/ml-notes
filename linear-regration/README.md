@@ -47,3 +47,18 @@ modal.fit(X_train, y_train)
 
 prediction = modal.prediction(X_test)
 ```
+
+### Explanation:
+
+**import libaries**
+
+```py
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_modal import LinearRegression
+```
+
+It imports:
+- **Pandas:** to work with dataframe
+- **`train_test_split`:** to split data to train and test data
+- **`LinearRegression`:** to import linear regression model 
