@@ -41,11 +41,11 @@ X_train, X_test, y_train, y_test = train_test_split(
   random_state=42
 )
 
-modal = LinearRegression()
+model = LinearRegression()
 
-modal.fit(X_train, y_train)
+model.fit(X_train, y_train)
 
-prediction = modal.prediction(X_test)
+prediction = model.prediction(X_test)
 ```
 
 ### Explanation:
@@ -91,3 +91,25 @@ X_train, X_test, y_train, y_test = train_test_split(
 ```
 
 This splits `0.2*100%` = `20%` data for testing and other for training.
+**Note:** here `random_state` is the seed for spliting data so that it return always the same data
+
+**Create model**
+
+```py
+model = LinearRegression()
+
+model.fit(X_train, y_train)
+```
+
+Here:
+- **`model = LinearRegression()`:** Creates an empty model
+- **`model.fit(X_train, y_train)`:** Trains modal by feeding `X_train` and `y_train` data
+
+**Predicting or testing model**
+
+```py
+prediction = model.prediction(X_test)
+```
+
+Here:
+The modal predict the output in the test data according to the data it was given for training.
