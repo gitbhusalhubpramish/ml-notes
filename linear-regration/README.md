@@ -78,3 +78,16 @@ X = df[["x"]]
 y = df["y"]
 ```
 **Note:** sklearn expect the `X` to be table(2D array) even if there is only one feature.
+
+**Split the data**
+
+```py
+X_train, X_test, y_train, y_test = train_test_split(
+  X,
+  y,
+  test_size=0.2,
+  random_state=42
+)
+```
+
+This splits `0.2*100%` = `20%` data for testing and other for training.
