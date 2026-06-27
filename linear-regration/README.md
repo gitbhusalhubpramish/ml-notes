@@ -50,7 +50,7 @@ prediction = modal.prediction(X_test)
 
 ### Explanation:
 
-**import libaries**
+**Import libaries**
 
 ```py
 import pandas as pd
@@ -62,3 +62,19 @@ It imports:
 - **Pandas:** to work with dataframe
 - **`train_test_split`:** to split data to train and test data
 - **`LinearRegression`:** to import linear regression model 
+
+**Load Datasets**
+
+```py
+df = pd.read_csv("data.csv")
+```
+
+This loads csv file to pandas dataframe format so that we can work with the dataset
+
+**Choosing the input**
+
+```py
+X = df[["x"]]
+y = df["y"]
+```
+**Note:** sklearn expect the `X` to be table(2D array) even if there is only one feature.
