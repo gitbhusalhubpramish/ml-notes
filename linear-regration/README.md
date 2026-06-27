@@ -63,6 +63,7 @@ It imports:
 - **`train_test_split`:** to split data to train and test data
 - **`LinearRegression`:** to import linear regression model 
 
+
 **Load Datasets**
 
 ```py
@@ -112,4 +113,5 @@ prediction = model.prediction(X_test)
 ```
 
 Here:
+
 The modal predict the output in the test data according to the data it was given for training.
