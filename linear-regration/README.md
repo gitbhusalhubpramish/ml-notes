@@ -150,3 +150,16 @@ Here
 $$
 MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
 $$
+
+**In python**
+
+```py
+from sklearn.metrics import mean_squared_error
+
+mse = mean_squared_error(y_test, prediction)
+print(mse)
+```
+
+Here
+- We import `mean_squared_error` from `sklearn.metrics`
+- Get the error using `y_test` and `prediction` from the imported function
