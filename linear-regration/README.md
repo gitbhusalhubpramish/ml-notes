@@ -115,3 +115,76 @@ prediction = model.prediction(X_test)
 Here:
 
 The modal predict the output in the test data according to the data it was given for training.
+
+---
+
+## Error/Accuracy of a model
+
+### 1. Mean Absolute Error (MAE)
+
+**Mathematical formula:**
+
+$$
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
+$$
+
+**In python**
+
+```py
+from sklearn.metrics import mean_absolute_error
+
+mae = mean_absolute_error(y_test, prediction)
+print(mae)
+```
+
+Here
+- We import `mean_absolute_error` from `sklearn.metrics`
+- Get the error using `y_test` and `prediction` from the imported function
+
+---
+
+### 2. Mean Squared Error (MSE)
+
+**Mathematical formula**
+
+$$
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
+$$
+
+**In python**
+
+```py
+from sklearn.metrics import mean_squared_error
+
+mse = mean_squared_error(y_test, prediction)
+print(mse)
+```
+
+Here
+- We import `mean_squared_error` from `sklearn.metrics`
+- Get the error using `y_test` and `prediction` from the imported function
+
+---
+
+### $R^2$  Score
+
+**Mathematical formula**
+
+$$
+R^2 = 1 - \frac{\sum (y-\hat{y})^2}{\sum (y-\bar{y})^2}
+$$
+
+Where:
+- $y$ is the actual(targeted) value
+- $\hat{y}$ is the predicted value
+- $\bar{y}$ is the mean of actual(targeted) value
+
+**In python**
+
+```py
+from sklearn.metrics import r2_score
+
+r2 = r2_score(y_test, prediction)
+```
+
+---
