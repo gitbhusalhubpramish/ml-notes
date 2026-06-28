@@ -221,6 +221,14 @@ Where:
 
 ### Deriving the gradients
 
+**w.r.t m**
+
 $$
 \frac{\partial L}{\partial m} = -\frac{2}{n} \sum (y-mx-b)x
+$$
+
+**w.r.t b**
+
+$$
+\frac{\partial L}{\partial b} = -\frac{2}{n} \sum (y-mx-b)
 $$
