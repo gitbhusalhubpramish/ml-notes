@@ -232,3 +232,15 @@ $$
 $$
 \frac{\partial L}{\partial b} = -\frac{2}{n} \sum (y-mx-b)
 $$
+
+---
+
+### gradient descent
+
+$$
+m = m + \alpha\frac{\partial L}{\partial m}
+$$
+
+$$
+b = b + \alpha\frac{\partial L}{\partial b}
+$$
