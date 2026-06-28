@@ -163,3 +163,18 @@ print(mse)
 Here
 - We import `mean_squared_error` from `sklearn.metrics`
 - Get the error using `y_test` and `prediction` from the imported function
+
+---
+
+### $R^2$  Score
+
+**Mathematical formula**
+
+$$
+R^2 = 1 - \frac{\sum (y-\hat{y})^2}{\sum (y-\bar{y})^2}
+$$
+
+Where:
+- $y$ is the actual(targeted) value
+- $\hat{y}$ is the predicted value
+- $\bar{y}$ is the mean of actual(targeted) value
