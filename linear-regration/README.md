@@ -218,3 +218,9 @@ Where:
 - **$\hat{y}$** is the prediction
 
 ---
+
+### Deriving the gradients
+
+$$
+\frac{\partial L}{\partial m} = -\frac{2}{n} \sum (y-mx-b)x
+$$
