@@ -188,3 +188,59 @@ r2 = r2_score(y_test, prediction)
 ```
 
 ---
+## Mathematics behind training
+
+### Prediction
+
+$$
+\hat{y} = mx+b
+$$
+
+Where:
+
+- **x** = input
+- **$\hat{y}$** = prediction
+- **m** = slope
+- **b** = intercept
+
+---
+
+### The error
+
+$$
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
+$$
+
+Where:
+
+- **n** is the number of prediction
+- **$y_i$** is targeted value for each prediction
+- **$\hat{y}$** is the prediction
+
+---
+
+### Deriving the gradients
+
+**w.r.t m**
+
+$$
+\frac{\partial L}{\partial m} = -\frac{2}{n} \sum (y-mx-b)x
+$$
+
+**w.r.t b**
+
+$$
+\frac{\partial L}{\partial b} = -\frac{2}{n} \sum (y-mx-b)
+$$
+
+---
+
+### gradient descent
+
+$$
+m = m + \alpha\frac{\partial L}{\partial m}
+$$
+
+$$
+b = b + \alpha\frac{\partial L}{\partial b}
+$$
