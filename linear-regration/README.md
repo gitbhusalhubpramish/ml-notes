@@ -127,3 +127,26 @@ The modal predict the output in the test data according to the data it was given
 $$
 MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
 $$
+
+**In python**
+
+```py
+from sklearn.metrics import mean_absolute_error
+
+mae = mean_absolute_error(y_test, prediction)
+print(mae)
+```
+
+Here
+- We import `mean_absolute_error` from `sklearn.metrics`
+- Get the error using `y_test` and `prediction` from the imported function
+
+---
+
+### 2. Mean Squared Error (MSE)
+
+**Mathematical formula**
+
+$$
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
+$$
