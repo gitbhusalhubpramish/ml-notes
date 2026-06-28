@@ -115,3 +115,15 @@ prediction = model.prediction(X_test)
 Here:
 
 The modal predict the output in the test data according to the data it was given for training.
+
+---
+
+## Error/Accuracy of a model
+
+### 1. Mean Absolute Error (MAE)
+
+**Mathematical formula:**
+
+$$
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y_i}|
+$$
