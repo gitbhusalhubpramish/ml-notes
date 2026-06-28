@@ -178,3 +178,13 @@ Where:
 - $y$ is the actual(targeted) value
 - $\hat{y}$ is the predicted value
 - $\bar{y}$ is the mean of actual(targeted) value
+
+**In python**
+
+```py
+from sklearn.metrics import r2_score
+
+r2 = r2_score(y_test, prediction)
+```
+
+---
