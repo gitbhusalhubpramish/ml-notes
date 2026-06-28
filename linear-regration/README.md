@@ -188,3 +188,33 @@ r2 = r2_score(y_test, prediction)
 ```
 
 ---
+## Mathematics behind training
+
+### Prediction
+
+$$
+\hat{y} = mx+b
+$$
+
+Where:
+
+- **x** = input
+- **$\hat{y}$** = prediction
+- **m** = slope
+- **b** = intercept
+
+---
+
+### The error
+
+$$
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y_i})^2
+$$
+
+Where:
+
+- **n** is the number of prediction
+- **$y_i$** is targeted value for each prediction
+- **$\hat{y}$** is the prediction
+
+---
