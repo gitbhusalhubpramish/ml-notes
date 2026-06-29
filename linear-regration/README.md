@@ -244,3 +244,6 @@ $$
 $$
 b = b + \alpha\frac{\partial L}{\partial b}
 $$
+
+Where:
+- $\alpha$ is the learning rate
