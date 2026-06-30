@@ -238,11 +238,11 @@ $$
 ### gradient descent
 
 $$
-m = m + \alpha\frac{\partial L}{\partial m}
+m = m - \alpha\frac{\partial L}{\partial m}
 $$
 
 $$
-b = b + \alpha\frac{\partial L}{\partial b}
+b = b - \alpha\frac{\partial L}{\partial b}
 $$
 
 Where:
