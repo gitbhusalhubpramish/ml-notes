@@ -310,3 +310,39 @@ w_n
 $$
 
 *Shape = (number of feature,)*
+
+---
+
+*error is same as 1d linear regression but we usually use MSE*
+
+---
+
+### Gradient
+
+For feature 1 we compute 
+
+$$
+\frac{\partial L}{\partial w_1} = \frac{2}{m} \sum e_i x_i1
+$$
+
+For feature 2  
+
+$$
+\frac{\partial L}{\partial w_2} = \frac{2}{m} \sum e_i x_i2
+$$
+
+For feature n
+
+$$
+\frac{\partial L}{\partial w_n} = \frac{2}{m} \sum e_i x_in
+$$
+
+Insteand we can use matrix multipication
+
+$$
+\nabla_w = \frac{2}{m} X^T e
+$$
+
+Where:
+
+- $e = y - \hat{y}$ 
