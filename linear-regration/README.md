@@ -247,3 +247,113 @@ $$
 
 Where:
 - $\alpha$ is the learning rate
+
+---
+
+## For 2d input
+
+Our output is not always depended upon only one variable - it depends upon multiple variable in real world. So, we use 2d input to predict $y$.
+
+**Formula**
+
+$$
+\hat{y} = WX + b
+$$
+
+Where:
+- $\hat{y}$ is the output
+- $W$ is the vector of weight
+- $X$ is a matrix of input
+- $b$ is the bios
+
+### Represent of variables
+**Representation of X**
+
+Unlike 1d linear regression we have a matrix input in 2d linear regression.
+
+Given the example of X in 1d linear regression
+
+$$
+X = \begin{bmatrix} 1 \\ 
+2 \\ 
+3 \\ 
+4 
+\end{bmatrix}
+$$
+
+Given the example of X in 2d linear regression
+
+$$
+X = \begin{bmatrix} 1 & 1200 \\ 
+2 & 2400 \\ 
+3 & 3000 \\ 
+4 & 4600
+\end{bmatrix}
+$$
+
+*shape = (number of example, number of feature)*
+
+---
+
+**Representation of W**
+
+Instant of a scaler value we now have
+
+$$
+W = \begin{bmatrix} w_1 \\
+w_2 \\
+. \\
+. \\
+. \\
+w_n
+\end{bmatrix}
+$$
+
+*Shape = (number of feature,)*
+
+---
+
+*error is same as 1d linear regression but we usually use MSE*
+
+---
+
+### Gradient for Weight
+
+For feature 1 we compute 
+
+$$
+\frac{\partial L}{\partial w_1} = \frac{2}{m} \sum e_i x_i1
+$$
+
+For feature 2  
+
+$$
+\frac{\partial L}{\partial w_2} = \frac{2}{m} \sum e_i x_i2
+$$
+
+For feature n
+
+$$
+\frac{\partial L}{\partial w_n} = \frac{2}{m} \sum e_i x_in
+$$
+
+Insteand we can use matrix multipication
+
+$$
+\nabla_w = \frac{2}{m} X^T e
+$$
+
+Where:
+
+- $e = y - \hat{y}$
+
+---
+
+### Gradient for bias
+
+for bias we compute 
+
+$$
+\frac{\partial L}{\partial b} = \frac{2}{m} \sum e
+$$
+
