@@ -357,3 +357,6 @@ $$
 \frac{\partial L}{\partial b} = \frac{2}{m} \sum e
 $$
 
+---
+
+*Training modals with 2d input in sklearn has the same syntex as 1d*
