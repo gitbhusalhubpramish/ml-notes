@@ -247,3 +247,15 @@ $$
 
 Where:
 - $\alpha$ is the learning rate
+
+---
+
+## For 2d input
+
+Our output is not always depended upon only one variable - it depends upon multiple variable in real world. So, we use 2d input to predict $y$.
+
+**Formula**
+
+$$
+\hat{y} = WX + b
+$$
