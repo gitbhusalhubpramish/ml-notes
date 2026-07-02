@@ -266,7 +266,8 @@ Where:
 - $X$ is a matrix of input
 - $b$ is the bios
 
-### Represent X
+### Represent of variables
+**Representation of X**
 
 Unlike 1d linear regression we have a matrix input in 2d linear regression.
 
@@ -290,4 +291,22 @@ X = \begin{bmatrix} 1 & 1200 \\
 \end{bmatrix}
 $$
 
-shape = (number of example, number of feature)
+*shape = (number of example, number of feature)*
+
+---
+
+**Representation of W**
+
+Instant of a scaler value we now have
+
+$$
+W = \begin{bmatrix} w_1 \\
+w_2 \\
+. \\
+. \\
+. \\
+w_n
+\end{bmatrix}
+$$
+
+*Shape = (number of feature,)*
