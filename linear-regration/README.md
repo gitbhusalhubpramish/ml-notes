@@ -317,7 +317,7 @@ $$
 
 ---
 
-### Gradient
+### Gradient for Weight
 
 For feature 1 we compute 
 
@@ -345,4 +345,15 @@ $$
 
 Where:
 
-- $e = y - \hat{y}$ 
+- $e = y - \hat{y}$
+
+---
+
+### Gradient for bias
+
+for bias we compute 
+
+$$
+\frac{\partial L}{\partial b} = \frac{2}{m} \sum e
+$$
+
