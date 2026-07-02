@@ -259,3 +259,35 @@ Our output is not always depended upon only one variable - it depends upon multi
 $$
 \hat{y} = WX + b
 $$
+
+Where:
+- $\hat{y}$ is the output
+- $W$ is the vector of weight
+- $X$ is a matrix of input
+- $b$ is the bios
+
+### Represent X
+
+Unlike 1d linear regression we have a matrix input in 2d linear regression.
+
+Given the example of X in 1d linear regression
+
+$$
+X = \begin{bmatrix} 1 \\ 
+2 \\ 
+3 \\ 
+4 
+\end{bmatrix}
+$$
+
+Given the example of X in 2d linear regression
+
+$$
+X = \begin{bmatrix} 1 & 1200 \\ 
+2 & 2400 \\ 
+3 & 3000 \\ 
+4 & 4600
+\end{bmatrix}
+$$
+
+shape = (number of example, number of feature)
