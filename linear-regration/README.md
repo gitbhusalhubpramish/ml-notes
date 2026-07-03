@@ -27,7 +27,7 @@ Here, the line cutting through the data plot is called *Regression Line*. This l
 ```py
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_modal import LinearRegression
+from sklearn.linear_model import LinearRegression
 
 df = pd.read_csv("data.csv")
 
@@ -45,7 +45,7 @@ model = LinearRegression()
 
 model.fit(X_train, y_train)
 
-prediction = model.prediction(X_test)
+prediction = model.predict(X_test)
 ```
 
 ### Explanation:
@@ -55,7 +55,7 @@ prediction = model.prediction(X_test)
 ```py
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.linear_modal import LinearRegression
+from sklearn.linear_model import LinearRegression
 ```
 
 It imports:
@@ -109,7 +109,7 @@ Here:
 **Predicting or testing model**
 
 ```py
-prediction = model.prediction(X_test)
+prediction = model.predict(X_test)
 ```
 
 Here:
