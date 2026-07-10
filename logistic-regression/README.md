@@ -84,6 +84,12 @@ $$
 \frac{\partial L}{\partial b} = \frac{1}{n} \sum (\hat{y} - y) 
 $$
 
+where:
+
+- $y$ is the expected output
+- $\hat{y}$ is the model ouput
+- $X$ is the input
+
 ---
 
 ## Gradient dicent
