@@ -126,8 +126,19 @@ $$
 w = w - \alpha \frac{\partial L}{\partial w}
 $$
 
+where:
+
+- $\alpha$ is the learning rate
+- $\frac{\partial L}{\partial w}$ is the gradient for weight
+
 **for bios**
 
 $$
 b = b - \alpha \frac{\partial L}{\partial b}
 $$
+
+
+where:
+
+- $\alpha$ is the learning rate
+- $\frac{\partial L}{\partial b}$ is the gradient for bios
