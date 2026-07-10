@@ -19,6 +19,8 @@ $$
 z = mx+b
 $$
 
+---
+
 ## In python
 
 ```py
@@ -38,3 +40,7 @@ model.fit(xtrain,ytrain)
 
 pred = model.predict(xtest)
 ```
+
+where:
+
+- `LogisticRegression` is the model class in sklearn so we can train and test model
