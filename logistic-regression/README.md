@@ -60,8 +60,26 @@ where:
 - $y$ is the expeted output
 - $\hat{y}$ is the model output
 
+*this is also called binary cross entropy loss*
+
 **Accuracy** of a model can be calculated by
 
 $$
 Accuracy = \frac{number of correct prediction}{total number of data}
+$$
+
+---
+
+## Gradient
+
+**w.r.t. w**
+
+$$
+\frac{\partial L}{\partial w} = \frac{1}{n} \sum (\hat{y} - y) X^T
+$$
+
+**w.r.t. b**
+
+$$
+\frac{\partial L}{\partial b} = \frac{1}{n} \sum (\hat{y} - y) 
 $$
