@@ -44,3 +44,13 @@ pred = model.predict(xtest)
 where:
 
 - `LogisticRegression` is the model class in sklearn so we can train and test model
+
+---
+
+## Error/Accuracy of a model
+
+**Error** of a Logistic Regression model can be calculated by the given formula
+
+$$
+L = - \frac{1}{n} \sum y log(\hat{y})+(1-y) log(1-\hat{y})
+$$
