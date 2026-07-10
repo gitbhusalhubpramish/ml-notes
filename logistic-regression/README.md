@@ -83,3 +83,19 @@ $$
 $$
 \frac{\partial L}{\partial b} = \frac{1}{n} \sum (\hat{y} - y) 
 $$
+
+---
+
+## Gradient dicent
+
+**for weight**
+
+$$
+w = w - \alpha \frac{\partial L}{\partial w}
+$$
+
+**for bios**
+
+$$
+b = b - \alpha \frac{\partial L}{\partial b}
+$$
