@@ -63,5 +63,5 @@ where:
 **Accuracy** of a model can be calculated by
 
 $$
-Accuracy = frac{number of correct prediction}{total number of data}
+Accuracy = \frac{number of correct prediction}{total number of data}
 $$
