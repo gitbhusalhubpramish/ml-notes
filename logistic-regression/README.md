@@ -62,11 +62,37 @@ where:
 
 *this is also called binary cross entropy loss*
 
+**In python**
+
+```py
+from sklearn.metrics import log_loss
+loss = log_loss(prediction, y)
+```
+
+where:
+
+- `prediction` is the model output
+- `y` is the expected output
+
+---
+
 **Accuracy** of a model can be calculated by
 
 $$
 Accuracy = \frac{number of correct prediction}{total number of data}
 $$
+
+**In python**
+
+```py
+from sklearn.metrics import accuracy_score
+accuracy_score(prediction, y)
+```
+
+where:
+
+- `prediction` is the model output
+- `y` is the expected output
 
 ---
 
