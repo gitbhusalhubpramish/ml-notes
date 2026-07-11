@@ -9,3 +9,26 @@ It stores training data, gets new point, calculate the **distance** between new 
 
   It picks the first k distance from sorted distance and counts the mode and give the mode as output.
 
+**How to choose k**
+
+Choosing k might play important role in model accuracy especially in noise
+
+- Choosing **large** value(30,40,50):
+
+  - Might ignore important local pattern
+
+- Choosing **small** value(1,2,3):
+
+  - Might be sensetive to noise
+
+- **choosing right value**
+
+$$
+k \approx \sqrt{n}
+$$
+
+## In python(sklearn)
+
+```py
+
+```
