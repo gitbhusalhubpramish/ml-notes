@@ -30,5 +30,22 @@ $$
 ## In python(sklearn)
 
 ```py
+import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
 
+df = pd.read_csv("data.csv")
+
+x = df[["x"]]
+y = df["y"]
+
+xtrain,xtest, ytrain, ytest = train_test_split(x,y, test_size=0.2, random_state= 42)
+
+model = KNeighborsClassifier(n_neighbors = 5)
+model.fit(xtrain,ytrain)
+pred = model.predict(xtest)
 ```
+
+where:
+
+- `KNeighborsClassifier` is the knn model.
