@@ -10,7 +10,7 @@ $$
 where:
 
 $$
-\sigma (z) = \frac{1}{1+e^z}
+\sigma (z) = \frac{1}{1+e^-z}
 $$
 
 and 
