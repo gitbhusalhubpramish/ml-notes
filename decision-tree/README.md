@@ -46,3 +46,25 @@ Gini = 1 - \sum p^2
 $$
 
 - **Get the best split:** After checking every possible split and gini impurity the split with least impurity is selected and create 2 new branch where it might classify or again repete the decision making.
+
+---
+
+### In python
+
+```
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+
+xtrain, xtest, ytrain, ytest = train_test_split(x,y, test_size = 0.2, random_state=42, stratify=y)
+
+model = DecisionTreeClassifier(max_depth=5, random_state = 42)
+model.fit(xtrain, ytrain)
+
+ypred = model.predict(xtest)
+```
+
+**Where:**
+
+- `DecisionTreeClassifier` is the algorithm used to train decision tree classifier model.
+
+
