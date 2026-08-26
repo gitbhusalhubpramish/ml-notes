@@ -32,4 +32,18 @@ For Example, we have:
 
 After training the model the model will give us one of the value among 1,2 and 3 according to the data we feed; it won't return **mean**.
 
+### How it works(trainning)
 
+It classifies data bashed on whether it crosses a threshold or not. It uses gini impurity to classify whether data is pure or not.
+
+**Training Algorithm:**
+
+- **Check every possible split:** Here the algorithm tries to split data in every possible way and possible value of feature.
+
+- **Calculate gini impurity:** The splited data is checked whether how pure is it - how distributed the catogary and classes are. The gini is calculated by this formula.
+
+$$
+Gini = 1 - \sum p^2
+$$
+
+- **Get the best split:** After checking every possible split and gini impurity the split with least impurity is selected and create 2 new branch where it might classify or again repete the decision making.
