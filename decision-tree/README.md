@@ -21,6 +21,9 @@ Here we have:
 
 - **Threshold:** It is the value which split data into two part.
 - **Branch:** New branch are again split from a threshold or classified.
+- **Depth:** It refers to how many decision does a tree make.
+
+---
 
 ## Classification tree
 
@@ -33,10 +36,6 @@ For Example, we have:
 After training the model the model will give us one of the value among 1,2 and 3 according to the data we feed; it won't return **mean**.
 
 ### How it works(trainning)
-
-It classifies data bashed on whether it crosses a threshold or not. It uses gini impurity to classify whether data is pure or not.
-
-**Training Algorithm:**
 
 - **Check every possible split:** Here the algorithm tries to split data in every possible way and possible value of feature.
 
