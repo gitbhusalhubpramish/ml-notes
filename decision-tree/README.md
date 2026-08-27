@@ -67,4 +67,27 @@ ypred = model.predict(xtest)
 
 - `DecisionTreeClassifier` is the algorithm used to train decision tree classifier model.
 
+---
+
+## Regression tree
+
+Regression tree is another decision tree algorithm which classifies data through mean and uses number rather than name. 
+
+For example, we have:
+
+y = [1,2,1,2,3,1,2,1,3]
+
+The algorithm will split the data and return the mean as output; it won't return classes.
+
+### How it works
+
+- **Check every possible split:** Here the algorithm tries to split data in every possible way and possible value of feature.
+
+- **Calculate MSE:** Unlike classification tree it doesn't classifies the data into classes rather it return the **mean** and the error is calculated through MSE.
+
+$$
+MSE = \frac{1}{n} \sum (y - \hat{y})^2
+$$
+
+- **Find best split:** *same as classification.*
 
