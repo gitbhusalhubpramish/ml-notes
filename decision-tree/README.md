@@ -75,7 +75,7 @@ Regression tree is another decision tree algorithm which classifies data through
 
 For example, we have:
 
-y = [1,2,1,2,3,1,2,1,3]
+`y = [1,2,1,2,3,1,2,1,3]`
 
 The algorithm will split the data and return the mean as output; it won't return classes.
 
@@ -91,3 +91,18 @@ $$
 
 - **Find best split:** *same as classification.*
 
+---
+
+### In python
+
+```py
+from sklearn.tree import DecisionTreeRegression
+from sklearn.model_selection import train_test_split
+
+xtrain, xtest, ytrain, ytest = train_test_split(x,y, test_size=0.2, random_state=42, stratify-y)
+
+model = DecisionTreeRegression(max_depth=5, random_state=42)
+model.fit(xtrain, ytrain)
+
+ypred = mode.predict(xtest)
+```
