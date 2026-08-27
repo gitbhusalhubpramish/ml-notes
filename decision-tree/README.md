@@ -1,8 +1,8 @@
 # Decision tree
 
-Decision tree is a meachine learning algorithm which works by asking question and creating new branch after each question.
+Decision tree is a meachine learning algorithm which works by **asking question** and creating new **branch** after each question.
 
-The algorithm works by asking question and spliting the data into two new group.
+The algorithm works by asking question and **spliting** the data into two new group.
 
 ## How it works?
 
@@ -27,9 +27,9 @@ Here we have:
 
 ## Classification tree
 
-Classification tree is a kind of decision tree which classifies the data. It is used to split data into classes.
+Classification tree is a kind of decision tree which **classifies** the data. It is used to split data into **classes**.
 
-For Example, we have:
+**For Example**, we have:
 
 ```y = [1,2,2,1,1,3,1,2,3]```
 
@@ -45,7 +45,7 @@ $$
 Gini = 1 - \sum p^2
 $$
 
-- **Get the best split:** After checking every possible split and gini impurity the split with least impurity is selected and create 2 new branch where it might classify or again repete the decision making.
+- **Get the best split:** After checking every possible split and gini impurity the split with *least impurity is selected and create 2 new branch where it might classify or again repete the decision making.
 
 ---
 
@@ -65,19 +65,19 @@ ypred = model.predict(xtest)
 
 **Where:**
 
-- `DecisionTreeClassifier` is the algorithm used to train decision tree classifier model.
+- `DecisionTreeClassifier` is the algorithm used to train decision tree **classifier model**.
 
 ---
 
 ## Regression tree
 
-Regression tree is another decision tree algorithm which classifies data through mean and uses number rather than name. 
+Regression tree is another decision tree algorithm which classifies data through **mean** and uses number rather than name. 
 
 For example, we have:
 
 `y = [1,2,1,2,3,1,2,1,3]`
 
-The algorithm will split the data and return the mean as output; it won't return classes.
+The algorithm will split the data and return the **mean** as output; it won't return classes.
 
 ### How it works
 
@@ -106,3 +106,7 @@ model.fit(xtrain, ytrain)
 
 ypred = mode.predict(xtest)
 ```
+
+**Where:**
+
+- `DecisionTreeRregression` is the algorithm used to train **regression model**.
