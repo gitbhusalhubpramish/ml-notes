@@ -44,26 +44,26 @@ Here the data is splited into two branches left and right from a value of a feat
 This is a important step of a decision tree while trainning. It checks how pure a split or classification is. To calculate gini on classification leaf we use this formula.
 
 $$
-Gini = 1- \sum (\frac{n_class}{n_total})^2
+Gini = 1- \sum (\frac{n_{class}}{n_{total}})^2
 $$
 
 **Where:**
 
-- $n_class$ is the number of element of that class.
-- $n_total$ is the sum of number of all element.
+- $n_{class}$ is the number of element of that class.
+- $n_{total}$ is the sum of number of all element.
 
 ### Best split
 
 A treshold or split is concidered as best treshold or split when it split data with least impurity. To calculate split score we use this formula.
 
 $$
-split score = \frac{n_left}{n_total} Gini(left) + \frac{n_right}{n_total} Gini(right)
+split score = \frac{n_{left}}{n_{total}} Gini(left) + \frac{n_{right}}{n_{total}} Gini(right)
 $$
 
 **Where:**
 
-- $n_left$ and $n_right$ is the number of element in left and right node
-- $n_total$ is the sum of $n_left$ and $n_right$
+- $n_{left}$ and $n_{right}$ is the number of element in left and right node
+- $n_{total}$ is the sum of $n_{left}$ and $n_{right}$
 - $Gini(left)$ and $Gini(right)$ is the impurity of left and right node
 
 ---
