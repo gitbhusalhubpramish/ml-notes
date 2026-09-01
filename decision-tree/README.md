@@ -102,17 +102,40 @@ For example, we have:
 
 The algorithm will split the data and return the **mean** as output; it won't return classes.
 
-### How it works
+### Spliting
 
-- **Check every possible split:** Here the algorithm tries to split data in every possible way and possible value of feature.
+Here the data is splited into two branches left and right from a value of feature called treshold. The spliting take place after every node untill it reaches a leaf where it predict the mean.
 
-- **Calculate MSE:** Unlike classification tree it doesn't classifies the data into classes rather it return the **mean** and the error is calculated through MSE.
+---
+
+### MSE error
+
+This is a important step of a decision tree while trainning. It checks how spread data is from the mean of the data. To calculate the MSE of regression tree we use this formula.
 
 $$
-MSE = \frac{1}{n} \sum (y - \hat{y})^2
+MSE = \frac{1}{n} \sum (\bar{y} - y)^2
 $$
 
-- **Find best split:** *same as classification.*
+**Where:**
+
+- $y$ is the value.
+- $\bar{y}$ is the mean of all the value in the leaf.
+
+---
+
+### Best split
+
+A treshold or split is concidered as best treshold or split when it split the data with least MSE. To calculate split score in regression tree we use this formula.
+
+$$
+split score = \frac{n_{left}}{n_{total}} MSE(left) + \frac{n_{right}}{n_{total}} MSE(right)
+$$
+
+**Where:**
+
+- $n_{left}$ and $n_{right}$ is the number of element in left or right node/leaf.
+- $n_{total}$ is the sum of $n_{left}$ and $n_{right}$.
+- $MSE(left)$ and $MSE(right)$ is the MSE error of left and right node/leaf
 
 ---
 
