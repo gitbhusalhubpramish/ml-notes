@@ -35,17 +35,36 @@ Classification tree is a kind of decision tree which **classifies** the data. It
 
 After training the model the model will give us one of the value among 1,2 and 3 according to the data we feed; it won't return **mean**.
 
-### How it works(trainning)
+### Spliting
 
-- **Check every possible split:** Here the algorithm tries to split data in every possible way and possible value of feature.
+Here the data is splited into two branches left and right from a value of a feature called treshold. The spliting take place after every node untill it reach a leaf where it classifies the classes.
 
-- **Calculate gini impurity:** The splited data is checked whether how pure is it - how distributed the catogary and classes are. The gini is calculated by this formula.
+### Gini impurity
+
+This is a important step of a decision tree while trainning. It checks how pure a split or classification is. To calculate gini on classification leaf we use this formula.
 
 $$
-Gini = 1 - \sum p^2
+Gini = 1- \sum (\frac{n_class}{n_total})^2
 $$
 
-- **Get the best split:** After checking every possible split and gini impurity the split with *least impurity is selected and create 2 new branch where it might classify or again repete the decision making.
+**Where:**
+
+- $n_class$ is the number of element of that class.
+- $n_total$ is the sum of number of all element.
+
+### Best split
+
+A treshold or split is concidered as best treshold or split when it split data with least impurity. To calculate split score we use this formula.
+
+$$
+split score = \frac{n_left}{n_total} Gini(left) + \frac{n_right}{n_total} Gini(right)
+$$
+
+**Where:**
+
+- $n_left$ and $n_right$ is the number of element in left and right node
+- $n_total$ is the sum of $n_left$ and $n_right$
+- $Gini(left)$ and $Gini(right)$ is the impurity of left and right node
 
 ---
 
