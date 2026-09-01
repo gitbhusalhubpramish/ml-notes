@@ -37,13 +37,13 @@ After training the model the model will give us one of the value among 1,2 and 3
 
 ### Spliting
 
-Here the data is splited into two branches left and right from a value of a feature called treshold. The spliting take place after every node untill it reach a leaf where it classifies the classes.
+Here the data is splited into **two branches** *left* and *right* from a value of a feature called **treshold**. The spliting take place after every node untill it reach a leaf where it classifies the classes.
 
 ---
 
 ### Gini impurity
 
-This is a important step of a decision tree while trainning. It checks how pure a split or classification is. To calculate gini on classification leaf we use this formula.
+This is a important step of a decision tree while trainning. It checks how **pure** a split or classification is. To calculate gini on classification leaf we use this formula.
 
 $$
 Gini = 1- \sum (\frac{n_{class}}{n_{total}})^2
@@ -58,7 +58,7 @@ $$
 
 ### Best split
 
-A treshold or split is concidered as best treshold or split when it split data with least impurity. To calculate split score we use this formula.
+A treshold or split is concidered as **best treshold** or split when it split data with **least impurity**. To calculate split score we use this formula.
 
 $$
 split score = \frac{n_{left}}{n_{total}} Gini(left) + \frac{n_{right}}{n_{total}} Gini(right)
@@ -104,13 +104,13 @@ The algorithm will split the data and return the **mean** as output; it won't re
 
 ### Spliting
 
-Here the data is splited into two branches left and right from a value of feature called treshold. The spliting take place after every node untill it reaches a leaf where it predict the mean.
+Here the data is splited into **two branches** *left* and *right* from a value of feature called **treshold**. The spliting take place after every node untill it reaches a leaf where it predict the **mean**.
 
 ---
 
 ### MSE error
 
-This is a important step of a decision tree while trainning. It checks how spread data is from the mean of the data. To calculate the MSE of regression tree we use this formula.
+This is a important step of a decision tree while **trainning**. It checks how **spread** data is from the **mean** of the data. To calculate the MSE of regression tree we use this formula.
 
 $$
 MSE = \frac{1}{n} \sum (\bar{y} - y)^2
@@ -125,7 +125,7 @@ $$
 
 ### Best split
 
-A treshold or split is concidered as best treshold or split when it split the data with least MSE. To calculate split score in regression tree we use this formula.
+A treshold or split is concidered as **best treshold** or split when it split the data with **least MSE**. To calculate split score in regression tree we use this formula.
 
 $$
 split score = \frac{n_{left}}{n_{total}} MSE(left) + \frac{n_{right}}{n_{total}} MSE(right)
