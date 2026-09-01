@@ -39,6 +39,8 @@ After training the model the model will give us one of the value among 1,2 and 3
 
 Here the data is splited into two branches left and right from a value of a feature called treshold. The spliting take place after every node untill it reach a leaf where it classifies the classes.
 
+---
+
 ### Gini impurity
 
 This is a important step of a decision tree while trainning. It checks how pure a split or classification is. To calculate gini on classification leaf we use this formula.
@@ -51,6 +53,8 @@ $$
 
 - $n_{class}$ is the number of element of that class.
 - $n_{total}$ is the sum of number of all element.
+
+---
 
 ### Best split
 
