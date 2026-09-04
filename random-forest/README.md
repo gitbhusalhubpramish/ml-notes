@@ -57,4 +57,41 @@ def build_forest(x,y, n_tree=20, max_depth=4):
 - Each tree is trained using the bootstrap data we choosed earlier.
 - Multiple tree make a forest
 
+## Combine their prediction
+
+For regression, take their mean:
+
+```py
+def predict(forest,x):
+	predictions = []
+
+	for tree in forest:
+		pred = x.apply(lambda x: runtree(tree,x), axis=1)
+		predictions.append(pred)
+	return np.mean(predictions,axis=0)
+```
+
+**Here:**
+
+- Each tree make prediction to data and collected in a array.
+- Mean is calculated from that prediction
+
+---
+
+For classification, take majority vote:
+
+```py
+def predict(forest,x):
+	predictions = []
+	for tree in forest:
+		pred = x.apply(lambda x: runtree(tree,x), axis=1)
+		predictions.append(pred)
+	return max(pred, key=list(pred).count)
+```
+
+**Here:**
+
+- Each tree make prediction to cata and collected in a array.
+- Majority vote is returned as output.
+
 
