@@ -1,10 +1,10 @@
 # Random Forest
 
-This is a meachine learning algorithm which works by running multiple decision tree with same test data - collect there predictions, count the majority for classificaton or find the mean for regression and return that. This is a collection of tree.
+This is a meachine learning algorithm which works by running **multiple decision tree** with same test data - collect there predictions, count the **majority** for classificaton or find the **mean** for regression and return that. This is a collection of tree.
 
 ## Make decision Tree
 
-Decision trees are the building blocks of random forest. Therefore we should make a decision tree algorithm either classification or regression. But it has some changes. 
+Decision trees are the **building blocks** of random forest. Therefore, we should make a decision tree algorithm either classification or regression. But it has some changes. 
 
 ```py
 def best_split(x,y,max_feature):
@@ -17,11 +17,11 @@ def best_split(x,y,max_feature):
 		#rest code
 ```
 
-Here, we don't select all feature but select random feature and train tree according to that.
+Here, we don't select all feature but select **random feature** and train tree according to that.
 
 ## Bootstrap
 
-Here, random set to data are selected to train a tree.
+Here, random set of data are selected to train a tree.
 
 ```py
 import numpy as np
@@ -34,11 +34,11 @@ def bootstrap(x,y):
 
 **Where:**
 
-- `np.random.choice(n,size=n,replace=True)` chooses the indices for data randomly `replace=True` may select 1 element multiple time.
+- `np.random.choice(n,size=n,replace=True)` chooses the indices for data **randomly** `replace=True` may select *1 element multiple time*.
 
 ## Make forest
 
-Now trees are trained independently by bootstrap sample and the decision tree algorithm we made earlier.
+Now trees are trained **independently** by bootstrap sample and the **decision tree** algorithm we made earlier.
 
 ```py
 def build_forest(x,y, n_tree=20, max_depth=4):
@@ -53,13 +53,13 @@ def build_forest(x,y, n_tree=20, max_depth=4):
 
 **Here:**
 
-- We randomly choose the data for each tree randomly using bootstrap.
-- Each tree is trained using the bootstrap data we choosed earlier.
+- We randomly choose the data for each tree randomly using **bootstrap**.
+- Each tree is **trained** using the bootstrap data we choosed earlier.
 - Multiple tree make a forest
 
 ## Combine their prediction
 
-For regression, take their mean:
+For regression, take their **mean**:
 
 ```py
 def predict(forest,x):
@@ -73,12 +73,12 @@ def predict(forest,x):
 
 **Here:**
 
-- Each tree make prediction to data and collected in a array.
-- Mean is calculated from that prediction
+- Each tree make **prediction** to data and collected in a array.
+- **Mean** is calculated from that prediction
 
 ---
 
-For classification, take majority vote:
+For classification, take **majority vote**:
 
 ```py
 def predict(forest,x):
@@ -91,7 +91,7 @@ def predict(forest,x):
 
 **Here:**
 
-- Each tree make prediction to cata and collected in a array.
-- Majority vote is returned as output.
+- Each tree make **prediction** to data and collected in a array.
+- **Majority vote** is returned as output.
 
 
