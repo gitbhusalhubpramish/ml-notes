@@ -19,6 +19,8 @@ def best_split(x,y,max_feature):
 
 Here, we don't select all feature but select **random feature** and train tree according to that.
 
+---
+
 ## Bootstrap
 
 Here, random set of data are selected to train a tree.
@@ -35,6 +37,8 @@ def bootstrap(x,y):
 **Where:**
 
 - `np.random.choice(n,size=n,replace=True)` chooses the indices for data **randomly** `replace=True` may select *1 element multiple time*.
+
+---
 
 ## Make forest
 
@@ -56,6 +60,8 @@ def build_forest(x,y, n_tree=20, max_depth=4):
 - We randomly choose the data for each tree randomly using **bootstrap**.
 - Each tree is **trained** using the bootstrap data we choosed earlier.
 - Multiple tree make a forest
+
+---
 
 ## Combine their prediction
 
@@ -94,4 +100,4 @@ def predict(forest,x):
 - Each tree make **prediction** to data and collected in a array.
 - **Majority vote** is returned as output.
 
-
+---
