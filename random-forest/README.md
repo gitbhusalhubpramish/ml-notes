@@ -40,7 +40,7 @@ def bootstrap(x,y):
 
 Now trees are trained independently by bootstrap sample and the decision tree algorithm we made earlier.
 
-```
+```py
 def build_forest(x,y, n_tree=20, max_depth=4):
 	forest = []
 
