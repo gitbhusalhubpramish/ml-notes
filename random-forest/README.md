@@ -19,3 +19,42 @@ def best_split(x,y,max_feature):
 
 Here, we don't select all feature but select random feature and train tree according to that.
 
+## Bootstrap
+
+Here, random set to data are selected to train a tree.
+
+```py
+import numpy as np
+
+def bootstrap(x,y):
+	n = len(x)
+	indices = np.random.choice(n,size=n,replace=True)
+	return x[indices], y[indices]
+```
+
+**Where:**
+
+- `np.random.choice(n,size=n,replace=True)` chooses the indices for data randomly `replace=True` may select 1 element multiple time.
+
+## Make forest
+
+Now trees are trained independently by bootstrap sample and the decision tree algorithm we made earlier.
+
+```
+def build_forest(x,y, n_tree=20, max_depth=4):
+	forest = []
+
+	for _ in range(n_tree):
+		xb,yb = bootstrap(x,y)
+		tree = build_tree(xb,yb,depth=0,max_depth,max_depth)
+		forest.append(tree)
+	return forest
+```
+
+**Here:**
+
+- We randomly choose the data for each tree randomly using bootstrap.
+- Each tree is trained using the bootstrap data we choosed earlier.
+- Multiple tree make a forest
+
+
