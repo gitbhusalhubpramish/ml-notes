@@ -16,7 +16,7 @@ $$
 
 ## Prediction
 
-The formula given above is just decison line. When any value of x returns $<=0$ it is classified as different class and if it returns $>=0$ it is different class
+The formula given above is just decison line. When any value of x returns $\leq 0$ it is classified as different class and if it returns $>0$ it is different class
 
 **Note:** *SVM classifies data into only 2 classes.*
 
@@ -29,7 +29,7 @@ $$
 If:
 
 $$
-z<=0
+z \leq 0
 $$
 
 **Then:**
