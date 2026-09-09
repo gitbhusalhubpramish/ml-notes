@@ -14,4 +14,32 @@ $$
 
 *This is just a simple SVM model. Real one is even more scary!*
 
+## Prediction
 
+The formula given above is just decison line. When any value of x returns $<=0$ it is classified as different class and if it returns $>=0$ it is different class
+
+**Note:** *SVM classifies data into only 2 classes.*
+
+$$
+z = w^T x + b 
+$$
+
+**Here:**
+
+If:
+
+$$
+z<=0
+$$
+
+**Then:**
+
+$$
+\hat{y} = -1
+$$
+
+Else:
+
+$$
+\hat{y} = 1
+$$
