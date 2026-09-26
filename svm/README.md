@@ -273,7 +273,7 @@ $$
 and 
 
 $$
-\hat{y} = \operatorname{sign}(f(x))
+\hat{y} = \text{sign}(f(x))
 $$
 
 ### Loss
@@ -303,5 +303,5 @@ $$
 Greadient decent
 
 $$
-\alpha = \alpha - \frac{\partial \mathcal{L}}{\partila \alpha}
+\alpha = \alpha - \frac{\partial \mathcal{L}}{\partial \alpha}
 $$
