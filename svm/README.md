@@ -153,7 +153,7 @@ $$
 Here we use the Huge loss formula
 
 $$
-L = max(0, 1-y_i \hat{y_i}
+L = max(0, 1-y_i \hat{y_i})
 $$
 
 **Here:**
@@ -192,13 +192,13 @@ The greadient for soft margin looks like this:
 w.r.t. w:
 
 $$
-\frac{\partial J}{\partial w} = w - C \sum{m_i < 1} y_i x_i
+\frac{\partial J}{\partial w} = w - C \sum_{m_i < 1} y_i x_i
 $$
 
 w.r.t. b:
 
 $$
-\frac{\partial J}{\partial b} = -C \sum{m_i<1} y_i
+\frac{\partial J}{\partial b} = -C \sum_{m_i<1} y_i
 $$
 
 **Here:**
