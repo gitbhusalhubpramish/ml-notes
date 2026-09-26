@@ -109,7 +109,7 @@ $$
 with objective:
 
 $$
-\min_{w,b,\xi} \frac{1}{2} ||w||^2 + C \sum{i} \xi_i
+\min_{w,b,\xi} \frac{1}{2} ||w||^2 + C \sum{i}{} \xi_i
 $$
 
 Here c is a constant where:
@@ -198,7 +198,7 @@ $$
 w.r.t. b:
 
 $$
-\frac{\partial J}{partial b} = -C \sum{m_i<1} y_i
+\frac{\partial J}{\partial b} = -C \sum{m_i<1} y_i
 $$
 
 **Here:**
