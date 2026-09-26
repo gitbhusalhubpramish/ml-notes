@@ -163,14 +163,46 @@ $$
 
 ### Greadients and it's decent
 
-The greadient looks like this
+The greadient for hard margin looks like this:
+
+w.r.t. w:
 
 $$
 \frac{\partial L}{\partial w} = -y_i x_i
+$$
+
+w.r.t. b:
+
+$$
+\frac{\partial L}{\partial b} = -y_i
 $$
 
 The greadient decient is same as every other algorithm:
 
 $$
 w = w - \frac{\partial L}{\partial w}
+$$
+
+$$
+b = b - \frac{\partial L}{\partial b}
+$$
+
+The greadient for soft margin looks like this:
+
+w.r.t. w:
+
+$$
+\frac{\partial J}{\partial w} = w - C \sum{m_i < 1} y_i x_i
+$$
+
+w.r.t. b:
+
+$$
+\frac{\partial J}{partial b} = -C \sum{m_i<1} y_i
+$$
+
+**Here:**
+
+$$
+m = y_i (w^t x + b)
 $$
