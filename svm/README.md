@@ -130,7 +130,7 @@ $$
 
 These are the datapoint near the decision line. Usually they are the points below margin 1. They are often used in dual and kernel trick.
 
-<img src = "images.png"/>
+<img src = "images.jpeg"/>
 
 # Linear SVM
 
