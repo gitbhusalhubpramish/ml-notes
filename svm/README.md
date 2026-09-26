@@ -44,6 +44,38 @@ $$
 \hat{y} = 1
 $$
 
+## Margins
+
+This is the perpendicular distance between decision line and support vector on the distance 1. there are 2 margin boundries which is defined as:
+
+$$
+w^T x + b = +1
+$$
+
+and 
+
+$$
+w^T + b = -1
+$$
+
+Therefore each side is:
+
+$$
+\frac{1}{||w||}
+$$
+
+So the total margin is 
+
+$$
+\frac{2}{||w||}
+$$
+
+## Support vectors
+
+These are the datapoint near the decision line. Usually they are the points below margin 1. They are often used in dual and kernel trick.
+
+<img src = "images.png"/>
+
 ## Linear SVM
 
 This is a simple svm model which has a simple linear dicision line and where model predict it as a class if it's y is above the decision line else it predict as another class.
