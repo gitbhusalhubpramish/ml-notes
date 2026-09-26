@@ -239,3 +239,21 @@ and
 $$
 \sum_{i} \alpha_i y_i = 0
 $$
+
+Lagarange enumerate the weight in the form of:
+
+$$
+w = \sum_{i} \alpha_i y_i x_i
+$$
+
+Therefore, our prediction becomes:
+
+$$
+f(x) = \sum_{i} \alpha_i y_i x_i^T x + \frac{1}{|S|} \sum_{k \in S} \(y_k - \sum_i \alpha_i y_i x_i^T x_k \)
+$$
+
+**Where:**
+
+- $k$ and $i$ both are support vector 
+- $x$ is the training point
+- $x_i$ is the support vector point
