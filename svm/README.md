@@ -109,7 +109,7 @@ $$
 with objective:
 
 $$
-\min{w,b,\xi} \frac{1}{2} ||w||^2 + C \sum{i} \xi_i
+\min_{w,b,\xi} \frac{1}{2} ||w||^2 + C \sum{i} \xi_i
 $$
 
 Here c is a constant where:
