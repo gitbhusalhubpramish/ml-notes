@@ -132,7 +132,7 @@ These are the datapoint near the decision line. Usually they are the points belo
 
 <img src = "images.png"/>
 
-## Linear SVM
+# Linear SVM
 
 This is a simple svm model which has a simple linear dicision line and where model predict it as a class if it's y is above the decision line else it predict as another class.
 
@@ -148,7 +148,7 @@ $$
 - $b$ is the bias.
 - $x$ is the input data
 
-### Loss
+## Loss
 
 Here we use the Huge loss formula
 
@@ -161,7 +161,7 @@ $$
 - $y_i$ is the true y.
 - $\hat{y_i}$ is the predicted y.
 
-### Greadients and it's decent
+## Greadients and it's decent
 
 The greadient for hard margin looks like this:
 
@@ -205,4 +205,37 @@ $$
 
 $$
 m = y_i (w^t x + b)
+$$
+
+# Dual 
+
+This repleces the weight and bias with one variable alpha. This requires support vectors to work. This transforms the original contrained optimization problem into an equivalent maximization problem that depends on lagarange multiplier and dot products between data points.
+
+It looks something like this:
+
+$$
+q(\alpha) = \sum_{i} a_i - \frac{1}{2} \sum_{i} \sum_{j} \alpha_i \alpha_j y_i y_j x_i^T x_j
+$$
+
+**where:**
+
+- $i$ is the index for support vector.
+- $j$ is the index for training/testing points.
+
+Then we maximize the dual function:
+
+$$
+\max_{a} q(\alpha)
+$$
+
+with contrast:
+
+$$
+0 \leq \alpha \leq C
+$$
+
+and 
+
+$$
+\sum_{i} \alpha_i y_i = 0
 $$
