@@ -257,3 +257,51 @@ $$
 - $k$ and $i$ both are support vector 
 - $x$ is the training point
 - $x_i$ is the support vector point
+
+## Linear Dual
+
+Everything given above was Linear dual. Here classfication is linear. 
+
+### Prediction
+
+Prediction of a model look something like this:
+
+$$
+f(x) = \sum_{i} \alpha_i y_i x_i^T x + \frac{1}{|S|} \sum_{k \in S} \(y_k - \sum_i \alpha_i y_i x_i^T x_k \)
+$$
+
+and 
+
+$$
+\hat{y} = \sign(f(x))
+$$
+
+### Loss
+
+Here loss seems something like this:
+
+$$
+\L(\alpha) = - \sum_{i} a_i + \frac{1}{2} \sum_{i} \sum_{j} \alpha_i \alpha_j y_i y_j x_i^T x_j
+$$
+
+**But** this is only while training.
+
+for test data we use:
+
+$$
+L_hinge =  \frac{1}{n} \sum_{j=1}^{n} \max(0, 1 - y_j f(x_j))
+$$
+
+### Greadient and it's decent
+
+greadient w.r.t. a
+
+$$
+\frac{\partial \L}{\partial \alpha} = y f(x) - 1
+$$
+
+Greadient decent
+
+$$
+\alpha = \alpha - \frac{\partial \L}{\partila \alpha}
+$$
