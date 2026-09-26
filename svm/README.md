@@ -351,3 +351,19 @@ This is same as neural-network activation. It looks something like this:
 $$
 K(x, x_i) = \tanh(\gamma x^T x_i + r)
 $$
+
+### Prediction
+
+As mantioned we replace $x_i^T x_j$ with $K(x_i, x_j)$. so the prediction looks like this:
+
+$$
+f(x) = \sum_{i} \alpha_i y_i K(x_i,x) + \frac{1}{|S|} \sum_{k \in S} \( y_k - \sum_{i} \alpha_i y_i K(x_i, x_k) \)
+$$
+
+and
+
+$$
+\hat{y} = \text{sign}(f(x))
+$$
+
+
