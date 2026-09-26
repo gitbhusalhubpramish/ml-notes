@@ -305,3 +305,49 @@ Greadient decent
 $$
 \alpha = \alpha - \frac{\partial \mathcal{L}}{\partial \alpha}
 $$
+
+## Kernel trick
+
+Here we transform the $x_j^T x$ to higher dimention to solve problem like data classified in circle, quadratic, sigmodi or any higher dimention form where linear dual can't classify.
+
+In linear we had:
+
+$$
+\mathcal{L}(\alpha) = - \sum_{i} a_i + \frac{1}{2} \sum_{i} \sum_{j} \alpha_i \alpha_j y_i y_j x_i^T x_j
+$$
+
+But in kernel we replace $x_i^T x_j$ with a kernel function $K(x_i, x_j)$
+
+### Types of kernel
+
+**1. Linear Kernel**
+
+This is same as linear dual. It seems something like this:
+
+$$
+K(x,x_i) = x^T x_i
+$$
+
+**2. Polynomial Kernel**
+
+This transforms the input data points in polynomial form. It looks something like this:
+
+$$
+K(x,x_i) = (\gama x^T x_i + r)^d
+$$
+
+**3. Radial Basis Function (RBF) / Gaussian Kernel**
+
+This Measures the similarit by distance. It looks something like this:
+
+$$
+K(x,x_i) = e^{- \gama ||x-x_i||^2}
+$$
+
+**4. Sigmodi Kernel**
+
+This is same as neural-network activation. It looks something like this:
+
+$$
+K(x, x_i) = \tanh(\gama x^T x_i + r)
+$$
