@@ -377,5 +377,5 @@ $$
 for testing data we use huge loss:
 
 $$
-\mathcal{L}_(huge)(\alpha) = \frac{1}{n} \sum_{j=1}^{n} \max(0, 1 - y_j f(x_j))
+\mathcal{L}_{huge}(\alpha) = \frac{1}{n} \sum_{j=1}^{n} \max(0, 1 - y_j f(x_j))
 $$
