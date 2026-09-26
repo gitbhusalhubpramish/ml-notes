@@ -333,7 +333,7 @@ $$
 This transforms the input data points in polynomial form. It looks something like this:
 
 $$
-K(x,x_i) = (\gama x^T x_i + r)^d
+K(x,x_i) = (\gamma x^T x_i + r)^d
 $$
 
 **3. Radial Basis Function (RBF) / Gaussian Kernel**
@@ -341,7 +341,7 @@ $$
 This Measures the similarit by distance. It looks something like this:
 
 $$
-K(x,x_i) = e^{- \gama ||x-x_i||^2}
+K(x,x_i) = e^{- \gamma ||x-x_i||^2}
 $$
 
 **4. Sigmodi Kernel**
@@ -349,5 +349,5 @@ $$
 This is same as neural-network activation. It looks something like this:
 
 $$
-K(x, x_i) = \tanh(\gama x^T x_i + r)
+K(x, x_i) = \tanh(\gamma x^T x_i + r)
 $$
