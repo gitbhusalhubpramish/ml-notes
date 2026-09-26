@@ -366,4 +366,16 @@ $$
 \hat{y} = \text{sign}(f(x))
 $$
 
+### Loss
 
+Here, as mentioned earlier the loss function for training sample looks like this:
+
+$$
+\mathcal{L}(\alpha) = - \sum_{i} \alpha_i + \frac{1}{2} \sum_{i} \sum_{j} \alpha_i \alpha_j y_i y_j K(x_i, x_j)
+$$
+
+for testing data we use huge loss:
+
+$$
+\mathcal{L}_(huge)(\alpha) = \frac{1}{n} \sum_{j=1}^{n} \max(0, 1 - y_j f(x_j))
+$$
