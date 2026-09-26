@@ -117,6 +117,15 @@ Here c is a constant where:
 - **Larger $C$:** promotes correct data classification
 - **Smaller $C$:** promotes wider margin.
 
+## Distance
+
+This is the physical perpendicular distance between decison line and a training point. Physical distance of any point is equal to:
+
+$$
+D = \frac{|w^T x_i|}{||w||}
+$$
+
+
 ## Support vectors
 
 These are the datapoint near the decision line. Usually they are the points below margin 1. They are often used in dual and kernel trick.
