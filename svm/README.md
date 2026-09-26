@@ -70,6 +70,53 @@ $$
 \frac{2}{||w||}
 $$
 
+### Hard margin
+
+Hard margin a margin where it needs classes to be perfiectly classified. It doesn't allow misclassification and points lie on the margin.
+
+$$
+y_i(w^T x_i + b) \geq 1
+$$
+
+It's objective is to maximize the margin
+
+$$
+\max \frac{2}{||w||}
+$$
+
+**Limitation:** It's focus is on perfection. Therefore, noicy data might not give the best solution
+
+### Soft margin
+
+Soft margin is a system where we focus on soft and good classification where miss classfication and entring margin are allowed. We introduce a slack variable or slack error to calculate the error for misclassification or margin entrance.
+
+$$
+\xi_i \geq 0
+$$
+
+Here $\xi$ is the huge loss defined as:
+
+$$
+\xi_i = max(0, 1 - y_i f(x_i))
+$$
+
+so the contrast is:
+
+$$
+y_i (w^T x_i + b) \geq 1 - \xi_i
+$$
+
+with objective:
+
+$$
+\min{w,b,\xi} \frac{1}{2} ||w||^2 + C \sum{i} \xi_i
+$$
+
+Here c is a constant where:
+
+- **Larger $C$:** promotes correct data classification
+- **Smaller $C$:** promotes wider margin.
+
 ## Support vectors
 
 These are the datapoint near the decision line. Usually they are the points below margin 1. They are often used in dual and kernel trick.
