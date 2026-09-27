@@ -379,3 +379,15 @@ for testing data we use huge loss:
 $$
 \mathcal{L}_{huge}(\alpha) = \frac{1}{n} \sum_{j=1}^{n} \max(0, 1 - y_j f(x_j))
 $$
+
+### Greadient and it's decent
+
+Deriving from the loss formula above we get greadient as:
+
+w.r.t $\alpha$:
+
+$$
+\frac{\partial \mathical{L}}{\partial \alpha} = \sum_{i} \sum_{j} y_i y_j K(x_i, x_j) \alpha - 1
+$$
+
+
