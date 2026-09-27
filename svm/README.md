@@ -387,11 +387,11 @@ Deriving from the loss formula above we get greadient as:
 w.r.t $\alpha$:
 
 $$
-\frac{\partial \mathical{L}}{\partial \alpha} = \sum_{i} \sum_{j} y_i y_j K(x_i, x_j) \alpha - 1
+\frac{\partial \mathcal{L}}{\partial \alpha} = \sum_{i} \sum_{j} y_i y_j K(x_i, x_j) \alpha - 1
 $$
 
 The greadient decent is same as all other models:
 
 $$
-\alpha = \alpha - \eta \frac{\partial \matical{L}}{\partial \alpha}
+\alpha = \alpha - \eta \frac{\partial \mathcal{L}}{\partial \alpha}
 $$
