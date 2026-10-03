@@ -69,6 +69,27 @@ $$
 \boxed{\log(P(A|B)) = \log(A) \sum_i \log(P(B|A))}
 $$
  
+### Final prediction
+
+Rather than relaying on only one class A we also calculate pobability for class $\bar{A}$ too.
+
+We first calculate,
+
+$$
+P(A|b)
+$$
+
+And,
+
+$$
+P(\bar{A}|B)
+$$
+
+Then data is concidered as class A if,
+
+$$
+P(A|B)>P(\bar{A}|B)
+$$
 
 ## Categorical Naive Bayes
 
