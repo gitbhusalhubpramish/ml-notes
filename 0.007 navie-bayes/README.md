@@ -40,7 +40,7 @@ When we have a lot of feature multipling all the probability(values less than 0)
 
 If we have 100 features and each class has probability of avrage of 0.4,
 
-So, the $P(A|B)$ becomes $1.6 * 10^40$ which is concidered as $0$ by the computer.
+So, the $P(A|B)$ becomes $6.53 * 10^{-40}$ which is concidered as $0$ by the computer.
 
 **The solution:**
 
@@ -66,7 +66,7 @@ $$
 Therefore we calculate score by:
 
 $$
-\boxed{\log(P(A|B)) = \log(A) \sum_i \log(P(B|A))}
+\boxed{\log(P(A|B)) = \log(A) + \sum_i \log(P(B|A))}
 $$
  
 ### Final prediction
