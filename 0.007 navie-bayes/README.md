@@ -66,7 +66,7 @@ $$
 Therefore we calculate score by:
 
 $$
-\log(P(A|B)) = \log(A) \sum_i \log(P(B|A))
+\boxed{\log(P(A|B)) = \log(A) \sum_i \log(P(B|A))}
 $$
  
 
