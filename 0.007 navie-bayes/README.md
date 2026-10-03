@@ -36,7 +36,39 @@ $$
 
 ### Log score calculation
 
-When we have a 
+When we have a lot of feature multipling all the probability(values less than 0) returns very small number which is concidered as 0 by the computer. For Example:
+
+If we have 100 features and each class has probability of avrage of 0.4,
+
+So, the $P(A|B)$ becomes $1.6 * 10^40$ which is concidered as $0$ by the computer.
+
+**The solution:**
+
+We take the log score
+
+Since, 
+
+$$
+\log(ab) = \log(a) + \log(b)
+$$
+
+And,
+
+If $a<b$,
+
+Then, 
+
+$$
+\log(a)<\log(b)
+$$
+
+
+Therefore we calculate score by:
+
+$$
+\log(P(A|B)) = \log(A) \sum_i \log(P(B|A))
+$$
+ 
 
 ## Categorical Naive Bayes
 
