@@ -93,8 +93,15 @@ $$
 
 ## Categorical Naive Bayes
 
-This is a simole and classic naive bayes algorithm which uses probability of bei
-ng a part of class by feature class. Here Its features are catogral too - usuall
-y words like `["Doctor", "Engineere"]` for predicting whether a person passed fr
-om a engineering collage.
+This is a simole and classic naive bayes algorithm which uses probability of being a part of class by feature class. Here Its features are catogral too - usually words like `["Doctor", "Engineere"]` for predicting whether a person passed from a engineering collage.
 
+The formula for $P(B|A)$ is the only thing which makes it different. And it seems like this
+
+$$
+P(B|A) = \frac{\text{n}(B)}{\text{n}(A)}
+$$
+
+**Where:**
+
+- $n(A)$ is the number of Class A in the data.
+- $n(B)$ is the number of Class B in the feature Class
