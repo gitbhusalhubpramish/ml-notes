@@ -98,7 +98,7 @@ This is a simole and classic naive bayes algorithm which uses probability of bei
 The formula for $P(B|A)$ is the only thing which makes it different. And it seems like this
 
 $$
-P(B|A) = \frac{\text{n}(B)}{\text{n}(A)}
+P(B|A) = \frac{n(B)}{n(A)}
 $$
 
 **Where:**
