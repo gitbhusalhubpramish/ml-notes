@@ -104,4 +104,21 @@ $$
 **Where:**
 
 - $n(A)$ is the number of Class A in the data.
-- $n(B)$ is the number of Class B in the feature Class
+- $n(B)$ is the number of Class B in the feature Class.
+
+## Gussian Naive Bayes
+
+This is used for numeric value where categorial can only predict if feature class is in training data while Gussian draws a Gussian graph in the form of $e^{-x}$ whose area is 1.
+
+The formula for $P(B|A)$ seems like this:
+
+$$
+P(B|A) = \frac{1}{\sqrt{2 \pi} \sigma_A} e^{- \frac{(B-\mu_A)^2}{2 \sigma_y^2}}
+$$
+
+**Where:**
+
+- $B$ is the value of a feature in tesing data.
+- $\sigma_A$ is the stander deviation of values of feature B with class A.
+- $\mu_A$ is the mean of values of feature B with class A.
+
