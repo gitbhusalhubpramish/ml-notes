@@ -36,3 +36,30 @@ Same as other Supervised learning algorithm, We must optmize the paramater. Para
 $$
 c_j = \frac{1}{||C_j||} \sum_{i \in C_j} x_i
 $$
+
+## K-means ++
+
+It is just about initlizing centroid precisely rather than randomly choosing it. It calculate the distance between already choosen centroid and other datapoint, chooses the point with max distance with every centroid. First we calculate the distance between datapoint with it's nearest centroid.
+
+$$
+D_i = \arg \min_k d(x_i, c_k)
+$$
+
+**Where:**
+
+- $c_k$ is the centroid.
+- $d(..)$ is the distance between any two point(here datapoint and centroid).
+
+**Now,** we predict whether it would be next centroid.
+
+$$
+P_i = \frac{D_i^2}{\sum_i D_i^2}
+$$
+
+**Then,** we choose next c with highest probability.
+
+$$
+c_{i+1} = \max_i P_i
+$$
+
+
