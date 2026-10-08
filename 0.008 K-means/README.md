@@ -13,5 +13,7 @@ $$
 **Where:**
 
 $$
-d(x,c) = \sqrt{sum_{i} (x_j - c_j)^2}
+d(x,c) = \sqrt{\sum_{i} (x_j - c_j)^2}
 $$
+
+
