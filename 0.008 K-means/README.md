@@ -34,5 +34,5 @@ $$
 Same as other Supervised learning algorithm, We must optmize the paramater. Parameter for this algoritm is the centrod so we must optmize centroid to minimize the cost function. First we select random centroid and do this operation:
 
 $$
-c_j = \frac{1}{||C_j||} \sum_i x_i
+c_j = \frac{1}{||C_j||} \sum_{i \in C_j} x_i
 $$
