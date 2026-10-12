@@ -17,5 +17,5 @@ Both are before training processes where we optmize data before training or feed
 This simpilly refers to make the mean of data 0. We do centring by:
 
 $$
-X^' = X-\bar{X}
+X' = X-\bar{X}
 $$
