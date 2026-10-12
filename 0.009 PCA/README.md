@@ -19,3 +19,15 @@ This simpilly refers to make the mean of data 0. We do centring by:
 $$
 X' = X-\bar{X}
 $$
+
+After this the mean of the data becomes 0. This prevents parameter be unnecessary large - very unsensetive at some point while very sensetive at some
+
+**Standardization**
+
+This refers to make the stander deviation of the data 1 after mean centirng. We standardizate by:
+
+$$
+X' = \frac{X-\bar{X}}{\sigma}
+$$
+
+This ensures constant sensetivity of parameter upto a fix point
