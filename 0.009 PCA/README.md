@@ -95,4 +95,19 @@ $$
 W = \begin{bmatrix} v_1 && v_2 && v_3 && ... && v_n \end{bmatrix}
 $$
 
+### Calculating in numpy
+
+We don't have a fix formula to calculate this so we use a function in numpy to calculate eigenvectors and eigenvalues in numpy. 
+
+```py
+import numpy as np
+
+lam, v = np.linalg.eigh(c)
+```
+
+**Where:**
+
+- `lam` is the Eigenvalues.
+- `v` is the Eigenvectors.
+- It is not sorted with coresponding variance so we have to sort in decending order according to corresponding variance.
 
