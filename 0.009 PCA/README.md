@@ -111,3 +111,16 @@ lam, v = np.linalg.eigh(c)
 - `v` is the Eigenvectors.
 - It is not sorted with coresponding variance so we have to sort in decending order according to corresponding variance.
 
+## Transformation of data
+
+This transforms the data of $n$ dimention to $d$ dimention where $n$ is the number of feature dataset has and $d$ is the number of feature we want to visulize. To do this we simpilly select first $d$ principal components our PCA then multiply it by the data.
+
+$$
+Z = XW_d
+$$
+
+**Where:**
+
+- $Z$ is the transformed data.
+- $X$ is the raw data.
+- $W_d$ is the first $d$ principal components
