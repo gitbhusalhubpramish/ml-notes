@@ -31,3 +31,20 @@ X' = \frac{X-\bar{X}}{\sigma}
 $$
 
 This ensures constant sensetivity of parameter upto a fix point
+
+## Covariance matirces
+
+This is the matrix of how a component is related to other components in the dataset. We calculate covariance by:
+
+$$
+Cov(x,y) = \frac{1}{n} \sum_{i} (x_i - \mu_i)(y_i - \mu_y)
+$$
+
+To get a covariance matrix we do:
+
+$$
+C = \begin{bmatrix} Var(X) && Cov(X,Y) && Cov(X,Z) \\
+Cov(X,Y) && Var(Y) && Cov(Y,Z) \\
+Cov(X,Z) && Cov(Y,Z) && Var(Z)
+\end(bmatrix)
+$$
