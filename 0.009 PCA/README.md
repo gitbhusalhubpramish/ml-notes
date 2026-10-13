@@ -46,5 +46,5 @@ $$
 C = \begin{bmatrix} Var(X) && Cov(X,Y) && Cov(X,Z) \\
 Cov(X,Y) && Var(Y) && Cov(Y,Z) \\
 Cov(X,Z) && Cov(Y,Z) && Var(Z)
-\end(bmatrix)
+\end{bmatrix}
 $$
