@@ -48,3 +48,51 @@ Cov(X,Y) && Var(Y) && Cov(Y,Z) \\
 Cov(X,Z) && Cov(Y,Z) && Var(Z)
 \end{bmatrix}
 $$
+
+## Eigenvectors and Eigenvalues
+
+Both are very useful components of PCA. Eigenvectors transforms the data or the direction of new axis(principal components) and Eigenvalues are the variance of the data spread in each principal components.
+
+They relate by:
+
+$$
+Cv= \lambda v
+$$
+
+**Eigenvectors**
+
+This is the direction of new axis(principal component). It transforms the data in new dimention. There are $n$ dimention(element) in a Eigenvector where $n$ is the number of feature. To find Eigenvector we do:
+
+It is calculated by:
+
+$$
+(C - \lambda I) v = 0
+$$
+
+**Where:**
+
+- $\lambda$ is the Eigenvalues
+- $v$ is the Eigenvector
+- $I$ is the identity matrix
+
+**Eigenvalues**
+
+This is the spreadness of data in corresponding axis. It is used to arrange the Eigenvectors to keep higest variance or eigenvectors holding most information in a PCA. To calculate this we do:
+
+$$
+\det(C - \lambda I) = 0
+$$
+
+Then we sort it in a matrix $W$ so that.
+
+$$
+\lambda_1 \geq \lambda_2 \geq \lambda_3 \geq ... \geq lambda_n
+$$
+
+and $W$ looks like this:
+
+$$
+W = \begin{bmatrix} v_1 && v_2 && v_3 && ... && v_n \end{bmatrix}
+$$
+
+
