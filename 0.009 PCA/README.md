@@ -4,9 +4,13 @@ This is a simple classic unsupervised Meachine Learning algorithm wihch simplifi
 
 There are n unmber of PCA in any PCA where n is the number of feature.
 
+---
+
 ## Principle axis
 
 This is the machine-made axis which has the higest number of variance in data so that it include maximum information in data. There are n number of Principle axis where n is the number of feature.
+
+---
 
 ## Mean-centering and Standardization
 
@@ -32,6 +36,8 @@ $$
 
 This ensures constant sensetivity of parameter upto a fix point
 
+---
+
 ## Covariance matirces
 
 This is the matrix of how a component is related to other components in the dataset. We calculate covariance by:
@@ -49,6 +55,8 @@ Cov(X,Z) && Cov(Y,Z) && Var(Z)
 \end{bmatrix}
 $$
 
+---
+
 ## Eigenvectors and Eigenvalues
 
 Both are very useful components of PCA. Eigenvectors transforms the data or the direction of new axis(principal components) and Eigenvalues are the variance of the data spread in each principal components.
@@ -59,7 +67,7 @@ $$
 Cv= \lambda v
 $$
 
-**Eigenvectors**
+### Eigenvectors
 
 This is the direction of new axis(principal component). It transforms the data in new dimention. There are $n$ dimention(element) in a Eigenvector where $n$ is the number of feature. To find Eigenvector we do:
 
@@ -75,7 +83,9 @@ $$
 - $v$ is the Eigenvector
 - $I$ is the identity matrix
 
-**Eigenvalues**
+---
+
+### Eigenvalues
 
 This is the spreadness of data in corresponding axis. It is used to arrange the Eigenvectors to keep higest variance or eigenvectors holding most information in a PCA. To calculate this we do:
 
@@ -95,6 +105,8 @@ $$
 W = \begin{bmatrix} v_1 && v_2 && v_3 && ... && v_n \end{bmatrix}
 $$
 
+---
+
 ### Calculating in numpy
 
 We don't have a fix formula to calculate this so we use a function in numpy to calculate eigenvectors and eigenvalues in numpy. 
@@ -110,6 +122,8 @@ lam, v = np.linalg.eigh(c)
 - `lam` is the Eigenvalues.
 - `v` is the Eigenvectors.
 - It is not sorted with coresponding variance so we have to sort in decending order according to corresponding variance.
+
+---
 
 ## Transformation of data
 
